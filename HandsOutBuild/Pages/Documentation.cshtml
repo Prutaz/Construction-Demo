@@ -1,0 +1,136 @@
+﻿@page
+@model HandsOutBuild.Pages.DocumentationModel
+@{
+    ViewData["Title"] = "Documentation";
+}
+
+<main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" style="background-image: url(assets/img/page-title-bg.jpg);">
+        <div class="container position-relative">
+            <h1>Documentation</h1>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a asp-page="/Index">Home</a></li>
+                    <li class="current">Documentation</li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- End Page Title -->
+
+    <div class="container py-5">
+        <section id="documentation" class="documentation">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Hands Out Build Group</h2>
+                    <p>
+                        Hands Out Build Group is a Razor Pages web application designed to showcase a construction company's services, projects, blog posts, and contact information. The application is built using ASP.NET Core Razor Pages and targets .NET 8.
+                    </p>
+
+                    <h3>Table of Contents</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#project-structure">Project Structure</a></li>
+                        <li><a href="#pages-overview">Pages Overview</a></li>
+                        <li><a href="#technologies-used">Technologies Used</a></li>
+                        <li><a href="#setup-instructions">Setup Instructions</a></li>
+                        <li><a href="#license">License</a></li>
+                    </ul>
+
+                    <h3 id="features">Features</h3>
+                    <ul>
+                        <li>Responsive Design: Fully responsive layout using Bootstrap.</li>
+                        <li>Dynamic Content: Razor Pages for dynamic content rendering.</li>
+                        <li>Hero Section: Engaging hero carousel on the homepage.</li>
+                        <li>Services: Detailed services offered by the company.</li>
+                        <li>Projects: Showcase of completed projects with filtering options.</li>
+                        <li>Blog: Recent blog posts with detailed pages.</li>
+                        <li>Contact Form: Functional contact form for user inquiries.</li>
+                        <li>SEO Optimized: Meta tags and structured content for better search engine visibility.</li>
+                    </ul>
+
+                    <h3 id="project-structure">Project Structure</h3>
+                    <pre>
+HandsOutBuild/
+├── Pages/
+│   ├── About.cshtml
+│   ├── Blog.cshtml
+│   ├── Blog-Details.cshtml
+│   ├── Contact.cshtml
+│   ├── Index.cshtml
+│   ├── Project.cshtml
+│   ├── Project-Details.cshtml
+│   ├── Services.cshtml
+│   └── Shared/
+│       └── _Layout.cshtml
+├── wwwroot/
+│   ├── assets/
+│   │   ├── css/
+│   │   ├── img/
+│   │   ├── js/
+│   │   └── vendor/
+│   └── lib/
+├── appsettings.json
+└── Program.cs
+                    </pre>
+
+                    <h3 id="pages-overview">Pages Overview</h3>
+                    <p><strong>1. Index.cshtml (Home Page):</strong> Hero section with a carousel, overview of services, projects, and testimonials.</p>
+                    <p><strong>2. About.cshtml:</strong> Information about the company and its mission.</p>
+                    <p><strong>3. Services.cshtml:</strong> Detailed list of services offered by the company.</p>
+                    <p><strong>4. Project.cshtml:</strong> Gallery of completed projects with filtering options.</p>
+                    <p><strong>5. Project-Details.cshtml:</strong> Detailed view of a specific project.</p>
+                    <p><strong>6. Blog.cshtml:</strong> List of recent blog posts.</p>
+                    <p><strong>7. Blog-Details.cshtml:</strong> Detailed view of a specific blog post.</p>
+                    <p><strong>8. Contact.cshtml:</strong> Contact form for user inquiries and company contact details.</p>
+                    <p><strong>9. Shared/_Layout.cshtml:</strong> Shared layout for consistent header, footer, and navigation across all pages.</p>
+
+                    <h3 id="technologies-used">Technologies Used</h3>
+                    <ul>
+                        <li>ASP.NET Core Razor Pages: For server-side rendering.</li>
+                        <li>Bootstrap: For responsive design and styling.</li>
+                        <li>AOS (Animate On Scroll): For scroll animations.</li>
+                        <li>Swiper.js: For carousels and sliders.</li>
+                        <li>Isotope.js: For project filtering.</li>
+                        <li>FontAwesome: For icons.</li>
+                    </ul>
+
+                    <h3 id="setup-instructions">Setup Instructions</h3>
+                    <ol>
+                        <li>
+                            Clone the Repository:
+                            <pre>
+git clone https://github.com/your-repo/hands-out-build-group.git
+cd hands-out-build-group
+                            </pre>
+                        </li>
+                        <li>
+                            Install Dependencies:
+                            <pre>
+dotnet restore
+                            </pre>
+                        </li>
+                        <li>
+                            Run the Application:
+                            <pre>
+dotnet run
+                            </pre>
+                        </li>
+                        <li>Access the Application: Open your browser and navigate to <code>http://localhost:5000</code>.</li>
+                        <li>
+                            Publish the Application (Optional):
+                            <pre>
+dotnet publish -c Release -o ./publish
+                            </pre>
+                        </li>
+                    </ol>
+
+                    <h3 id="license">License</h3>
+                    <p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>
